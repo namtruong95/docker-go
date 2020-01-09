@@ -40,7 +40,9 @@ RUN set -xe; \
     useradd -u ${PUID} -g laradock -m laradock -G docker_env && \
     usermod -p "*" laradock -s /bin/bash && \
     apt-get install -yqq \
-      apt-utils
+      apt-utils \
+      git \
+      vim
 
 #
 #--------------------------------------------------------------------------
